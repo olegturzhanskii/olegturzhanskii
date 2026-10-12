@@ -29,15 +29,15 @@ nuance, to natural phrasing, and to which words go together and which merely
 could.
 
 People close to me sometimes call me a snob when it comes to English, and I
-take it as a compliment.
+take it as a compliment; they have a word for the computing side too: nerd.
 
 I have a soft spot for American English, but I want to feel at home wherever
 English is spoken, because it is a world language rather than one country's.
 
 My curiosity reaches other languages too, and I am learning Spanish.
 
-Programming languages hold the same fascination for me, and my work is not
-limited to Python.
+Programming languages hold the same fascination for me, and Python is the one
+I reach for first rather than the only one I work in, as my dotfiles show.
 
 Wordwinnow comes from what that curiosity costs: stopping at every word worth
 investigating takes some of the pleasure out of a series or an article, so it
@@ -84,18 +84,39 @@ technology has to follow.
 
 ## How I work
 
-I work the way I like software built: at the command line, in an environment I
-can inspect, configure, and compose from small tools.
+I like to settle the problem and its boundaries before I choose anything that
+will serve them, and then to choose deliberately: a tool earns its place by
+answering a need I can name, and it stays replaceable.
+
+That is how Wordwinnow is built, with the domain at the center and every
+technology at the edge, and it is how my environment is built too: a
+configurable editor with small tools composed around it, rather than one
+integrated environment that decides my conventions for me.
 
 My [dotfiles](https://github.com/olegturzhanskii/dotfiles) are that environment written down, with a setup that shows its
-plan before acting.
+plan before acting, and a Neovim configuration that began as kickstart.nvim, a
+starting point meant to be forked and edited, and has changed substantially
+since.
 
 One key shows what composing small tools means: `Ctrl-T` opens fzf in a tmux
 popup, `fd` supplies the list, and `bat` draws the preview.
 
-My Neovim configuration began as kickstart.nvim, a starting point meant to be
-forked and edited, and it has changed substantially since.
+I work in small, inspectable steps, each checked before the next, and my
+projects follow [engineering-conventions](https://github.com/olegturzhanskii/engineering-conventions), a versioned standard for Python
+projects that ships with the tooling to check it, so a project names the
+version it follows, carries the checks in its own gate, and lets a reviewer
+tell a violation from a version gap.
 
-Wordwinnow follows [engineering-conventions](https://github.com/olegturzhanskii/engineering-conventions), my written standard for Python
-projects, which requires every automated check to have a positive control,
-because a check that can fail open is not a check.
+One rule in it governs the checks themselves: every automated check must prove
+it can fail, by catching a case it is known to catch, because a check that can
+fail open is not a check.
+
+Generative AI is part of that process: models contribute substantially to my
+projects, in reasoning and in implementation alike, and each project's README
+says which ones and how.
+
+What stays mine is the direction and the requirements, the judgment of every
+proposal against the evidence, and the responsibility for what is published.
+
+Both projects belong to the [Wordbench organization](https://github.com/wordbench), with Wordwinnow public
+and Wordbench not yet.

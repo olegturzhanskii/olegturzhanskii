@@ -14,7 +14,8 @@ learner's attention at the learner's own level.
 [![Wordwinnow in a terminal, reading Sherlock Holmes's line "You see, but you
 do not observe. The distinction is clear." for a learner at B1 and picking out
 distinction and observe, each with its CEFR level, a meaning, related words,
-and the sentence it came from][demo]][run]
+the sentence it came from, and the other meanings the text may use
+instead][demo]][run]
 
 [demo]: assets/wordwinnow.gif
 [run]: https://github.com/wordbench/wordwinnow#running-it

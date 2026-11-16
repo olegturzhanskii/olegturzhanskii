@@ -19,7 +19,18 @@ and the sentence it came from][demo]][run]
 [demo]: assets/wordwinnow.gif
 [run]: https://github.com/wordbench/wordwinnow#running-it
 
-## Languages
+- **Now:** [Wordwinnow](https://github.com/wordbench/wordwinnow) [![Wordwinnow's latest release](https://img.shields.io/github/v/release/wordbench/wordwinnow?label=release&color=informational)](https://github.com/wordbench/wordwinnow/releases/latest), a command line for learners,
+  and the same use cases as services behind a queue.
+- **Wordwinnow's stack:** Python, FastAPI, SQLAlchemy, PostgreSQL, Kafka, Redis,
+  ClickHouse, Docker Compose, and GitHub Actions; NLTK, WordNet, and
+  scikit-learn.
+- **Practice:** Domain-Driven Design and Hexagonal Architecture, small reviewed
+  steps, and no check trusted until it has failed on purpose.
+- **Where to look first:** Wordwinnow's [architecture](https://github.com/wordbench/wordwinnow/blob/main/docs/architecture.md), the
+  [tests that keep every dependency pointing inward](https://github.com/wordbench/wordwinnow/tree/main/tests/fitness), [the engineering standard](https://github.com/olegturzhanskii/engineering-conventions/blob/main/STANDARD.md),
+  and the dotfiles' [doctor](https://github.com/olegturzhanskii/dotfiles/blob/main/bin/doctor).
+
+## Languages, human and programming
 
 English has a special place for me: learning it is a lifelong journey rather
 than a course to finish, because there is always more to learn.
@@ -72,7 +83,7 @@ flowchart TB
     driven -->|implement the driven ports| core
 ```
 
-Every arrow is a dependency, and a test that scans every import fails if one
+Every arrow is a dependency, and [a test that scans every import](https://github.com/wordbench/wordwinnow/tree/main/tests/fitness) fails if one
 points the other way; it is shown to catch a deliberate violation.
 
 Event-Driven Architecture appears at exactly one seam, where a request has to
@@ -98,8 +109,8 @@ plan before acting, and a Neovim configuration that began as kickstart.nvim, a
 starting point meant to be forked and edited, and has changed substantially
 since.
 
-One key shows what composing small tools means: `Ctrl-T` opens fzf in a tmux
-popup, `fd` supplies the list, and `bat` draws the preview.
+One key shows what composing small tools means: <kbd>Ctrl</kbd>+<kbd>T</kbd>
+opens fzf in a tmux popup, `fd` supplies the list, and `bat` draws the preview.
 
 I work in small, inspectable steps, each checked before the next, and my
 projects follow [engineering-conventions](https://github.com/olegturzhanskii/engineering-conventions), a versioned standard for Python
@@ -118,5 +129,5 @@ says which ones and how.
 What stays mine is the direction and the requirements, the judgment of every
 proposal against the evidence, and the responsibility for what is published.
 
-Both projects belong to the [Wordbench organization](https://github.com/wordbench), with Wordwinnow public
-and Wordbench not yet.
+Wordwinnow and Wordbench both belong to the [Wordbench organization](https://github.com/wordbench), with
+Wordwinnow public and Wordbench not yet.
